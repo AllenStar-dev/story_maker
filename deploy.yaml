@@ -4,8 +4,8 @@ services:
   chatbot:
     image: chicha21/story_maker:1.0
     expose:
-      - port: 8000
-        as: 8000
+      - port: 8047
+        as: 8047
         to:
           - global: true
     env:
@@ -15,11 +15,16 @@ profiles:
     chatbot:
       resources:
         cpu:
-          units: 1
+          units: 2
         memory:
-          size: 2Gi
+          size: 5Gi
         storage:
-          - size: 5Gi
+          - size: 10Gi
+        gpu:
+          units: 1
+          attributes:
+            vendor:
+              nvidia:
   placement:
     dcloud:
       pricing:
