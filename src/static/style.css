@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color: #f1ebeb;
+    --primary-font: 'Poppins', "Helvetica Neue", sans-serif;
+    --secondary-font: "Roboto", "Arial", sans-serif;
+    font-size: 10px;
+}
+body{
+    color: var(--color);
+    font-family: var(--primary-font);
+    background-image: linear-gradient(0deg, #212121, hsl(0deg 4.31% 16.48% / 99.9%));
+}
+html, body { 
+    min-height: 100%; 
+    height: 100vh;
+}
+main{
+    height: 100%;
+}
+textarea{
+    color: var(--color);
+    resize: none;
+    overflow-y: hidden;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    padding: 1.4rem 1.6rem;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    background: #302e2e;
+}
+button{
+    position: absolute;
+    right: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    transition: background-color, border-radius .15s cubic-bezier(.4,0,.2,1);
+}
+button:hover{
+    background-color: #171717;
+    border-radius: 8px;
+}
+.story-block{
+    max-height: 65vh;
+    overflow: hidden scroll;
+    scrollbar-width: none;
+    scrollbar-color: #534d54 transparent;
+    width: 75%;
+}
+.story-block:hover{
+    scrollbar-width: thin;
+}
+h1, .story, .footer{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+.footer{
+    height: 40px;
+    font-size: 1.2rem;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.footer > img{
+    height: 100%;
+}
+.story{ 
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+.prompt{
+    width: 50%;
+}
+.loader-box{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader { /* from https://cssloaders.github.io/ */
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    background: currentColor;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: animloader 0.3s 0.3s linear infinite alternate;
+  }
+  
+  .loader::after, .loader::before {
+    content: '';
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    background: currentColor;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    box-sizing: border-box;
+    animation: animloader 0.3s  0.45s  linear infinite alternate;
+  }
+  .loader::before {
+    left: -20px;
+    animation-delay: 0s;
+  }
+  
+  @keyframes animloader {
+    0%   { height: 48px} 
+    100% { height: 4px}
+  }
+
+@media only screen and (max-width: 787px) {
+    .story-block{
+        width: 100%;
+    }
+    .story-block, .story-block:hover{
+        scrollbar-width: thin;    
+        padding-right: 0;
+    }
+    .prompt{
+        width: 100%;
+    }
+}
