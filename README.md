@@ -3,6 +3,10 @@ This is a generative AI web app where if a user writes a line, a story will be g
 
 ![alt text](https://github.com/AllenStar-dev/story_maker/blob/main/src/static/web-app-preview.png)
 
+# Host on Akash 
+* Follow the [Akash docs](https://akash.network/docs/deployments/cloudmos-deploy/) to get started with deployments.
+* When ready, use the [deploy.yaml](https://github.com/AllenStar-dev/story_maker/blob/main/deploy.yaml) to the Akash SDL prompt and deploy
+
 # Run the App
 To build docker, use this cmd
 ```
