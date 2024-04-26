@@ -4,8 +4,8 @@ services:
   chatbot:
     image: chicha21/story_maker:1.0
     expose:
-      - port: 8047
-        as: 8047
+      - port: 5000
+        as: 5000
         to:
           - global: true
     env:
