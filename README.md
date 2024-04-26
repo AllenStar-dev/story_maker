@@ -23,3 +23,6 @@ docker run -d -p <port-for-local-docker-instance>:<port-for-webapp> <your-image-
 
 Check the web app locally
 `http://localhost:<port-for-local-docker-instance>`
+
+# Video Demo 
+Link to the video demo https://youtu.be/MeCJ6vDNzQg 
