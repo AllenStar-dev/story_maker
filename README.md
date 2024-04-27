@@ -1,6 +1,8 @@
 # AI Story Maker
 This AI story maker leverages [distilgpt-2](https://huggingface.co/distilbert/distilgpt2) model.
 
+This is the [URL](http://provider.provider-02.sandbox-01.aksh.pw:32418/) of my Chatbot running on Akash Network.
+
 This is a generative AI web app where if a user writes a line, a story will be generated according to it.
 
 ![alt text](https://github.com/AllenStar-dev/story_maker/blob/main/src/static/web-app-preview.png)
